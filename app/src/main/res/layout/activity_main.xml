@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAC7C7"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#84808A"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#100B0B"
+            android:baselineAligned="false"
+            android:ems="10"
+            android:hint="Write Work Here......"
+            android:inputType="textPersonName"
+            android:textColor="#130D13"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/buttonid"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="clip_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+
+
+            android:backgroundTint="#0BB1A2"
+            android:drawableBottom="@android:drawable/checkbox_on_background"
+            android:hapticFeedbackEnabled="true"
+            android:paddingRight="50dp"
+            android:text="Add work"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#120E0E"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="50dp"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|fill_vertical"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="1dp"
+
+        android:background="#191616"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</LinearLayout>
